@@ -57,3 +57,18 @@ float aksesGaji(Dosen* d) {
 float lihatGajiStaff(Staff* s) {
     return s->gaji;
 }
+
+class Universitas {
+public:
+    void tampilGajiDosen(Dosen* d) {
+        cout << "Gaji Dosen     : " << aksesGaji(d) << endl;
+    }
+
+    void tampilGajiStaff(Staff* s) {
+        cout << "Gaji Staff     : " << lihatGajiStaff(s) << endl;
+    }
+};
+
+void Dosen::beriNilai(Mahasiswa* m, float nilai) {
+    m->nilai = nilai;
+}
