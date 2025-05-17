@@ -19,3 +19,17 @@ public:
 
     friend class Dosen;
 };
+
+class Dosen {
+private:
+    string nama;
+    string nidn;
+    string pangkat;
+    float gaji;
+
+public:
+    Dosen(string n, string id, string p, float g) : nama(n), nidn(id), pangkat(p), gaji(g) {}
+    friend float aksesGaji(Dosen* d);
+    friend class Staff;
+    void beriNilai(Mahasiswa* m, float nilai);
+};
